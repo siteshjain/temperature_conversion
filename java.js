@@ -37,16 +37,16 @@ const calculate=()=>{
     if(tempValue==='cel'){
         res1=celTokel(number);
         res2=celTofah(number);
-        document.getElementById('result1').innerHTML=`${res2}&deg Fahrenheit`;
-        document.getElementById('result2').innerHTML=`${res1}&degKelvin`;
+        document.getElementById('result1').innerHTML=`${res2}&degF`;
+        document.getElementById('result2').innerHTML=`${res1}&degK`;
 
     }
     else if(tempValue==='kel')
     {
         res1=keltocel(number);
         res2=keltofah(number);
-        document.getElementById('result1').innerHTML=`${res1}&degCelsius`;
-        document.getElementById('result2').innerHTML=`${res2}&deg Fahrenheitt`;
+        document.getElementById('result1').innerHTML=`${res1}&degC`;
+        document.getElementById('result2').innerHTML=`${res2}&degF`;
 
 
     }
@@ -54,8 +54,8 @@ const calculate=()=>{
     {
         res1=fahtokel(number);
         res2=fahtocel(number);
-        document.getElementById('result2').innerHTML=`${res1}&degKelvin`;
-        document.getElementById('result1').innerHTML=`${res2}&degCelsius`;
+        document.getElementById('result2').innerHTML=`${res1}&degK`;
+        document.getElementById('result1').innerHTML=`${res2}&degC`;
 
     }
 
